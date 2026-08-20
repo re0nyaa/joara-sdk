@@ -1,0 +1,71 @@
+{
+    "name": "joara-sdk",
+    "version": "1.0.0",
+    "description": "Joara TypeScript API Client & Parser",
+    "type": "module",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "module": "./dist/src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/re0nyaa/joara-sdk.git"
+    },
+    "bugs": {
+        "url": "https://github.com/re0nyaa/joara-sdk/issues"
+    },
+    "homepage": "https://github.com/re0nyaa/joara-sdk#readme",
+    "exports": {
+        ".": {
+            "types": "./dist/src/index.d.ts",
+            "import": "./dist/src/index.js",
+            "require": "./dist/src/index.js"
+        },
+        "./client": {
+            "types": "./dist/src/client.d.ts",
+            "import": "./dist/src/client.js",
+            "require": "./dist/src/client.js"
+        },
+        "./types": {
+            "types": "./dist/src/types.d.ts",
+            "import": "./dist/src/types.js",
+            "require": "./dist/src/types.js"
+        },
+        "./errors": {
+            "types": "./dist/src/errors.d.ts",
+            "import": "./dist/src/errors.js",
+            "require": "./dist/src/errors.js"
+        },
+        "./cache": {
+            "types": "./dist/src/cache.d.ts",
+            "import": "./dist/src/cache.js",
+            "require": "./dist/src/cache.js"
+        },
+        "./retry": {
+            "types": "./dist/src/retry.d.ts",
+            "import": "./dist/src/retry.js",
+            "require": "./dist/src/retry.js"
+        },
+        "./parser": {
+            "types": "./dist/src/parser.d.ts",
+            "import": "./dist/src/parser.js",
+            "require": "./dist/src/parser.js"
+        }
+    },
+    "scripts": {
+        "start": "node --import tsx src/index.ts",
+        "build": "tsc -p tsconfig.build.json",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config jest.config.cjs"
+    },
+    "dependencies": {
+        "undici": "^6.21.1"
+    },
+    "devDependencies": {
+        "@jest/globals": "^30.4.1",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^22.0.0",
+        "jest": "^30.4.2",
+        "ts-jest": "^29.4.12",
+        "tsx": "^4.19.0",
+        "typescript": "^5.5.0"
+    }
+}
