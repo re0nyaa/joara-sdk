@@ -1,6 +1,6 @@
 {
     "name": "joara-sdk",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "Joara 비공식 TypeScript API 클라이언트",
     "type": "module",
     "main": "./dist/index.js",

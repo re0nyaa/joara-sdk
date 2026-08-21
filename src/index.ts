@@ -1,3 +1,9 @@
+/**
+ * 조아라 (Joara) TypeScript 엔터프라이즈 SDK
+ *
+ * @packageDocumentation
+ */
+
 export * from './types.js'
 export * from './errors.js'
 export * from './cache.js'
@@ -9,6 +15,9 @@ import { JoaraClient } from './client.js'
 import { JoaraTokenParser } from './parser.js'
 import { JoaraBook, SearchBookItem } from './types.js'
 
+/**
+ * 기본 클라이언트 내보내기 (JoaraClient)
+ */
 export default JoaraClient
 
 async function runEnterpriseDemo() {
