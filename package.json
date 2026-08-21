@@ -1,11 +1,14 @@
 {
     "name": "joara-sdk",
-    "version": "1.0.1",
-    "description": "Joara TypeScript API Client & Parser",
+    "version": "1.0.12",
+    "description": "Joara 비공식 TypeScript API 클라이언트",
     "type": "module",
-    "main": "./dist/src/index.js",
-    "types": "./dist/src/index.d.ts",
-    "module": "./dist/src/index.js",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "module": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/re0nyaa/joara-sdk.git"
@@ -16,39 +19,39 @@
     "homepage": "https://github.com/re0nyaa/joara-sdk#readme",
     "exports": {
         ".": {
-            "types": "./dist/src/index.d.ts",
-            "import": "./dist/src/index.js",
-            "require": "./dist/src/index.js"
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.js"
         },
         "./client": {
-            "types": "./dist/src/client.d.ts",
-            "import": "./dist/src/client.js",
-            "require": "./dist/src/client.js"
+            "types": "./dist/client.d.ts",
+            "import": "./dist/client.js",
+            "require": "./dist/client.js"
         },
         "./types": {
-            "types": "./dist/src/types.d.ts",
-            "import": "./dist/src/types.js",
-            "require": "./dist/src/types.js"
+            "types": "./dist/types.d.ts",
+            "import": "./dist/types.js",
+            "require": "./dist/types.js"
         },
         "./errors": {
-            "types": "./dist/src/errors.d.ts",
-            "import": "./dist/src/errors.js",
-            "require": "./dist/src/errors.js"
+            "types": "./dist/errors.d.ts",
+            "import": "./dist/errors.js",
+            "require": "./dist/errors.js"
         },
         "./cache": {
-            "types": "./dist/src/cache.d.ts",
-            "import": "./dist/src/cache.js",
-            "require": "./dist/src/cache.js"
+            "types": "./dist/cache.d.ts",
+            "import": "./dist/cache.js",
+            "require": "./dist/cache.js"
         },
         "./retry": {
-            "types": "./dist/src/retry.d.ts",
-            "import": "./dist/src/retry.js",
-            "require": "./dist/src/retry.js"
+            "types": "./dist/retry.d.ts",
+            "import": "./dist/retry.js",
+            "require": "./dist/retry.js"
         },
         "./parser": {
-            "types": "./dist/src/parser.d.ts",
-            "import": "./dist/src/parser.js",
-            "require": "./dist/src/parser.js"
+            "types": "./dist/parser.d.ts",
+            "import": "./dist/parser.js",
+            "require": "./dist/parser.js"
         }
     },
     "scripts": {

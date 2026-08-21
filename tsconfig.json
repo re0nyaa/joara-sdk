@@ -11,5 +11,5 @@
         "types": ["node", "jest"],
         "outDir": "./dist"
     },
-    "include": ["src/**/*", "index.ts", "test/**/*"]
+    "include": ["src/**/*", "test/**/*"]
 }
